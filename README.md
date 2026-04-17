@@ -70,3 +70,5 @@ CMD:
 
 # 4. Open the application
    Visit: http://127.0.0.1:5000 to add client's input and push the button to send it via the designated MS Access file.
+
+Authored by: Anthony Reyes
