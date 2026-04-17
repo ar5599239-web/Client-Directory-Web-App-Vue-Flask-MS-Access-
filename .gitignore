@@ -17,3 +17,5 @@ Thumbs.db
 # Python Tools
 __pycache__/
 *.pyc 
+# Access File
+mydatabase.accdb
