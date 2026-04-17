@@ -1,0 +1,19 @@
+# Virtual Environment
+venv/
+
+# Save Dependencies
+requirements.txt
+
+# Environment Variables: Secures User/Passwords
+.env
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python Tools
+__pycache__/
+*.pyc 

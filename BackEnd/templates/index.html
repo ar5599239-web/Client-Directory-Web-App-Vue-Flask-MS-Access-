@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="app">
+
+    <h1>Client Directory</h1>
+
+    <!-- 🔹 ADD CLIENT FORM -->
+    <div class="form-section">
+        <h2>Add Client</h2>
+
+        <input v-model="newClient.name" placeholder="Name">
+        <input v-model="newClient.email" placeholder="Email">
+        <input v-model="newClient.company" placeholder="Company">
+
+        <button @click="addClient" :disabled="loading">
+            Add Client
+        </button>
+    </div>
+
+    <hr>
+
+    <!-- 🔹 CLIENT LIST -->
+    <div class="card" v-for="(client, index) in clients" :key="index">
+        <h2>[[ client.name ]]</h2>
+        <p><strong>Email:</strong> [[ client.email || '-' ]]</p>
+        <p><strong>Company:</strong> [[ client.company || '-' ]]</p>
+    </div>
+
+</div>
+
+<!-- Vue CDN -->
+<script src="https://unpkg.com/vue@3"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<script src="{{ url_for("static", filename="app.js") }}"></script>
+
+</body>
+</html>
