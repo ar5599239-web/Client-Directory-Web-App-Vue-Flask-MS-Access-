@@ -1,9 +1,9 @@
 from db import insert_client
 
 sample_clients = [
-    {"name": "John Carter", "email": "john.carter@email.com", "company": "Carter Solutions"},
-    {"name": "Lisa Monroe", "email": "lisa.monroe@email.com", "company": "Monroe Tech"},
-    {"name": "David Kim", "email": "david.kim@email.com", "company": "Kim Consulting"}
+    {"name": "John Doe", "email": "jd@example.com", "company": "Spec LLC"},
+    {"name": "Jane Doe", "email": "jdoe@example.com", "company": "Spec LLC"},
+    {"name": "Bob Alice", "email": "ba@example.com", "company": "Pythonics LLC"}
 ]
 
 for client in sample_clients:
