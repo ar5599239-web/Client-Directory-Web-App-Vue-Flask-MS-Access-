@@ -28,25 +28,25 @@ The system demonstrates front-end and back-end integration, API development, and
 
 # Project Structure (Parent/Child file hierarchy):
 
-project_name/
-	access_db/
-		client_database.accdb
-	backend/
-		__pycache__/
-		static/
-			app.js
-			styles.css
-		templates/
-			index.html
-		app.py
-		db.py
-	venv/
-        <libs, scripts, etc.>
-    .env
-	.gitignore
-	README.md
-	requirements.txt		
-
+project-name/
+│
+├── access_db/
+			└── db.accdb
+├── backend/
+			└── __pycache__/
+			└── static/
+				└──	app.js
+					styles.css
+			└── templates/
+				└──	index.html
+			└── app.py
+			└── db.py
+├── venv/
+├── .env
+├── .gitignore
+├── README.md
+└── requirements.txt
+    
 ---
 
 # Setup Instructions
