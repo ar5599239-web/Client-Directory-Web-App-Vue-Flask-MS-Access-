@@ -7,11 +7,11 @@ load_dotenv()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.getenv("ACCESS_DB_PATH")
 
-# Temporary print
+# Fetches "DB_PATH" file from the ".env" file using a variable; conceals the local machine's path to the accdb file.
 print("DB PATH FROM ENV:", DB_PATH)
 print("EXISTS:", os.path.exists(DB_PATH))
 
-# Test connection:
+# Driver connection to the MS Access database file
 conn = pyodbc.connect(
     r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
     rf'DBQ={DB_PATH};'
@@ -19,6 +19,7 @@ conn = pyodbc.connect(
 
 print("CONNECTED SUCCESSFULLY")
 
+# Calls the connection to the db file
 def get_connection():
     conn_str = (
         r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
@@ -26,7 +27,7 @@ def get_connection():
     )
     return pyodbc.connect(conn_str)
 
-
+# Fetches client input from app.
 def insert_client(client):
     conn = get_connection()
     cursor = conn.cursor()
@@ -41,7 +42,7 @@ def insert_client(client):
     conn.commit()
     conn.close()
 
-
+# Calls for retrieved input to be placed in database.
 def get_clients():
     conn = get_connection()
     cursor = conn.cursor()
