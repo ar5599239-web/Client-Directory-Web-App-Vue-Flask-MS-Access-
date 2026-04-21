@@ -3,7 +3,7 @@
 # Overview
 This project is a full-stack web application that manages a simple client directory. It allows users to add and view client records through a web interface built with Vue.js, while a Flask API handles backend logic and stores data in a Microsoft Access database.
 
-The system demonstrates front-end and back-end integration, API development, and database connectivity using Python and ODBC. AI-assisted techniques were used to enhance data parsing, improve data quality, and streamline development.
+The system demonstrates front-end and back-end integration, API development, and database connectivity using Python and ODBC. AI-assisted techniques were used to enhance development, optimize troubleshooting, and improve code quality, while all logic, validation, and security controls were implemented and verified by the developer.
 
 ---
 
